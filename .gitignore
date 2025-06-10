@@ -1,0 +1,26 @@
+tmp
+node_modules
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Folders
+.idea/
+.vscode/
+vendor/
+
+# logs
+*.log
+
+# Compiled binary files
+*.exe
+*.out
