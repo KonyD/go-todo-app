@@ -1,4 +1,4 @@
-tmp
+.env
 node_modules
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
@@ -6,16 +6,9 @@ node_modules
 *.a
 *.so
 
-# Go workspace file
-go.work
-go.work.sum
-
-# env file
-.env
-
 # Folders
-.idea/
-.vscode/
+_obj
+_test
 vendor/
 
 # logs
@@ -23,4 +16,13 @@ vendor/
 
 # Compiled binary files
 *.exe
+*.out
+
+# macOS specific files
+.DS_Store
+
+# Go specific files
+# Compiled binary for packages and commands
+/bin/
+# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
