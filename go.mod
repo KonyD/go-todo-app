@@ -1,4 +1,4 @@
-module github.com/KonyD/go-todo-app.git
+module github.com/KonyD/go-todo-app
 
 go 1.23.1
 
