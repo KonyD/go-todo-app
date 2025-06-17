@@ -36,7 +36,7 @@ A simple full-stack Todo application built with:
 
    ```sh
    # Install Air if you don't have it
-   go install github.com/cosmtrek/air@latest
+   go install github.com/air-verse/air@latest
 
    # Then run
    air
