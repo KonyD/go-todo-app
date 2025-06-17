@@ -2,24 +2,20 @@ import { Badge, Box, Flex, Spinner, Text } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import type { Todo } from "./TodoList";
-import { BASE_URL } from "../App";
 import { useTodoMutation } from "../hooks/useTodoMutation";
 import {useColorModeValue} from "./ui/color-mode"
 
 const TodoItem = ({ todo }: { todo: Todo }) => {
-  const updateUrl = `${BASE_URL}/todos/${todo._id}`;
-  const deleteUrl = `${BASE_URL}/todos/${todo._id}`;
-
   const { mutate: updateTodo, isPending: isUpdating } = useTodoMutation(
     "updateTodo",
     "PATCH",
-    updateUrl
+    todo
   );
 
   const { mutate: deleteTodo, isPending: isDeleting } = useTodoMutation(
     "deleteTodo",
     "DELETE",
-    deleteUrl
+    todo
   );
 
   return (
